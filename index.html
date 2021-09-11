@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAOS Problems</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/5f479e2d2a.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="title">
+        <div class="logo"><a href="#">Ejercicios<span>JS.</span></a></div>
+    </header>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <div class="container">
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="#">JAO<span>S.</span></a></div>
+                <ul class="menu">
+                    <li><a href="#home" class="menu-btn">Home</a></li>
+                    <li><a href="#basic" class="menu-btn">Básicos</a></li>
+                    <li><a href="#medio" class="menu-btn">Medio</a></li>
+                    <li><a href="#dificil" class="menu-btn">Hard</a></li>
+                   
+                </ul>
+                
+            </div>
+        </nav>
+
+
+        <div class="box"  id="home">
+            
+                <article class="article">
+            <h1>¡Hola mundo!</h1>
+            <p>En esta página encontras un conjunto de ejercicios básicos hasta un nivel medio para poder 
+                empezar a trabajar con Javascript y mejorar tu logica de programación.</p>
+                <h1>Pero antes</h1>
+              <h3>
+                ¿Qué es JavaScript?
+              </h3>  
+            <p>JavaScript es el lenguaje de programación encargado de dotar de mayor interactividad y 
+                dinamismo a las páginas web. Cuando JavaScript se ejecuta en el navegador, no necesita 
+                de un compilador. El navegador lee directamente el código, sin necesidad de terceros. 
+                Por tanto, se le reconoce como uno de los tres lenguajes nativos de la web junto a HTML 
+                (contenido y su estructura) y a CSS (diseño del contenido y su estructura).</p>
+                <h3>
+                    ¿Para qué sirve JavaScript?
+                  </h3>   
+            <p>Con este lenguaje de programación del lado del cliente (no en el servidor) podemos crear efectos y 
+                animaciones sin ninguna interacción, o respondiendo a eventos causados por el propio usuario tales 
+                como botones pulsados y modificaciones del DOM (document object model). Por tanto, nada tiene que ver 
+                con el lenguaje de  programación Java, ya que su principal función es ayudar a crear páginas 
+                webs dinámicas.</p>
+
+                <p>El código de programación de JavaScript se ejecuta en los navegadores, 
+                    ya sean de escritorio o móviles, ya sean Android o Iphone. Sirve para exactamente 
+                    lo mismo, da igual en el tipo de dispositivo que se ejecute el navegador.</p>
+
+                 <p>JavaScript es capaz de detectar errores en formularios, de crear bonitos sliders que se adapten
+                      a cualquier pantalla, de hacer cálculos matemáticos de forma eficiente, de modificar elementos 
+                      de una página web de forma sencilla. Pero también JS es el encargado de que existan herramientas 
+                      como Google Analytics,  Google Tag Manager, Facebook Pixel y tantas otras, 
+                     que son claros ejemplos de JavaScript.</p> 
+
+                     <p>Encontraras los ejercicios resueltos en mi Github que esta al final de esta página.</p>
+                     <p>Recuerda que hay diferentes de maneras de resolver estos problemas.</p>     
+        </article>       
+        </div>
+
+
+
+        <div class="box" id="basic">
+            <article class="article">
+                <h1>Palabra en Reversa </h1>
+                <p>Vamos a ver cómo rotar una cadena en JavaScript .</p>
+                <h3>
+                    Conceptos Claves
+                  </h3>  
+                <p> Las cadenas en JavaScript son inmutables y no son parecidas a las de C. 
+                    Es decir, en C son arreglos de caracteres pero en JavaScript no. 
+                    Por lo tanto, para invertir una cadena en JavaScript tenemos que crear una nueva cadena.</p>
+                    
+            <ul>
+                <li>Ciclos</li>
+            </ul>
+            <label for="fname">Palabra en Reversa:</label><br>
+             <input type="text" id="fname" name="fname"  required ><br>
+            <button onclick="FirstReverse()">Click this button</button> 
+            <p id="demo"></p>
+        </article>
+        </div>
+
+   <div class="box">
+    <article class="article">
+        <h1>Numero Mayor </h1>
+        <p>Vamos obtener el numero mayor de tres numeros escritos por pantalla .</p>
+        <h3>
+            Conceptos Claves
+          </h3>     
+          <p>Recuerda que lo que optenemos por pantalla son strings .</p>    
+    <ul>
+        <li>Condiciones</li>
+    </ul>
+    
+    
+    <label for="fname">Numero uno:</label><br>
+     <input type="number" id="mayor1" name="mayor1"  required min="1"><br>
+     <label for="fname">Numero dos:</label><br>
+     <input type="number" id="mayor2" name="mayor2"  required min="1"><br>
+           
+     <label for="fname">Numero tres:</label><br>
+     <input type="number" id="mayor3" name="mayor3"  required min="1"><br>
+           
+     <button onclick="Mayor()">Click this button</button>
+    
+    <p id="demo2"></p>
+    </article>
+        </div>
+
+<div class="box">
+    <article class="article">
+        <h1>Divisible entre dos </h1>
+        <p>Vamos a consultar si el numero escrito por pantalla es divisible entre dos.</p>
+        <h3>
+            Conceptos Claves
+          </h3>         
+    <ul>
+        <li>Condiciones</li>
+    </ul>
+     <label for="fname">Numero:</label><br>
+     <input type="number" id="divisible" name="divisible"  required min="1"><br>
+    
+    <button onclick="DosNumerosDivisible()">Click this button</button>
+    <p id="demo3"></p>
+</article>
+            
+</div>
+<div class="box">
+    <article class="article">
+        <h1>Cuantas A tiene tu Frase </h1>
+        <p>Vamos a contar las "A" de la palabra escrita por pantalla </p>
+        <h3>
+            Conceptos Claves
+          </h3>
+                  
+    <ul>
+        <li>Array</li>
+        <li>Filtrar elementos de un array con filter()</li>
+    </ul>
+    <label for="fname">Frase:</label><br>
+    <input type="text" id="frasea" name="frasea"  required minlength="2"><br>
+   
+    <button onclick="Frase()">Click this button</button>
+    <p id="demo4"></p>
+</article>
+            
+</div>
+<div class="box">
+    <article class="article">
+        <h1>Cuantas bocales tiene tu Frase </h1>
+        <p>Vamos a contar y diferenciar las bocales de la palabra escrita por pantalla </p>
+        <h3>
+            Conceptos Claves
+          </h3>
+                  
+    <ul>
+        <li>Array</li>
+        <li>Filtrar elementos de un array con filter()</li>
+    </ul>
+   
+    
+    <label for="fname">Frase:</label><br>
+    <input type="text" id="frasevoca" name="frasevoca"  required minlength="2"><br>
+    <button onclick="FraseBocales()">Click this button</button>
+    
+    <p id="demo5"></p>
+
+</article>   
+</div >
+<div class="box">
+    <article class="article">
+        <h1>Cuantas bocales diferentes tiene tu Frase </h1>
+        <p>Vamos a contar, diferenciar y ordenar las bocales de la palabra escrita por pantalla </p>
+        <h3>
+            Conceptos Claves
+          </h3>
+                  
+    <ul>
+        <li>Array</li>
+        <li>Filtrar elementos de un array con filter()</li>
+    </ul>
+    <label for="fname">Frase:</label><br>
+    <input type="text" id="frasevocadife" name="frasevoca"  required minlength="2"><br>
+    <button onclick="TotalBocales()">Click this button</button>
+    <p id="demo6"></p>
+</article>   
+            
+</div>
+
+
+<div class="box">
+    <article class="article">
+        <h1>Divisible por 2, 3, 5 o 7  </h1>
+        <p>Vamos a consultar si el número escrito por pantalla es divisible por 2, 3, 5 o 7 y por 
+            cual. </p>
+        <h3>
+            Conceptos Claves
+          </h3>
+                  
+    <ul>
+        <li>Array</li>
+        <li>Condiciones</li>
+        <li>Ciclos</li>
+    </ul>
+    <label for="fname">Numero:</label><br>
+    <input type="number" id="divisile1" name="divisile1"  required min="1"><br>
+    <button onclick="Divisible()"> Click this button </button>
+    <p id="demo7"></p>
+</article>
+</div>
+
+<div class="box">
+    <article class="article">
+        <h1>Divisible del Número dado  </h1>
+        <p>Vamos a consultar los divisores del número escrito por pantalla.</p>
+        <h3>
+            Conceptos Claves
+          </h3>
+                  
+    <ul>
+        <li>Array</li>
+        <li>Condiciones</li>
+        <li>Ciclos</li>
+    </ul>
+    <label for="fname">Numero:</label><br>
+    <input type="number" id="divisile2" name="divisile2"  required min="1"><br>
+   
+    <button onclick="DivisibleNumerDado()"> Click this button </button>
+    <p id="demo8"></p>
+</article>
+</div>
+
+<div class="box">
+    <article class="article">
+        <h1>Divisores comunes de dos números dados  </h1>
+        <p>Vamos a consultar los divisores comunes de dos números escritos por pantalla.</p>
+        <h3>
+            Conceptos Claves
+          </h3>
+                  
+    <ul>
+        <li>Array</li>
+        <li>Condiciones</li>
+        <li>Ciclos</li>
+    </ul>
+    <label for="fname">Numero 1:</label><br>
+    <input type="number" id="divisile3" name="divisile3"  required min="1"><br>
+   
+    <label for="fname">Numero 2:</label><br>
+    <input type="number" id="divisile4" name="divisile4"  required min="1"><br>
+   
+    <button onclick="DivisibleNumerDadoEntreDos()"> Click this button </button>
+    <p id="demo9"></p>
+</article>
+</div>
+
+<div class="box">
+    <article class="article">
+        <h1>Número Primo  </h1>
+        <p>Vamos a consultar si el número escritos por pantalla esprimo.</p>
+        <h3>
+            Conceptos Claves
+          </h3>
+          <p>Un número primo (no es divisible por ninguno otro número que no sea él mismo o la unidad)</p>           
+    <ul>
+        <li>Array</li>
+        <li>Condiciones</li>
+        <li>Ciclos</li>
+    </ul>
+    <label for="fname">Numero:</label><br>
+    <input type="number" id="primo" name="primo"  required min="1"><br>
+   
+    <button onclick="Primo()"> Click this button </button>
+    <p id="demo10"></p>
+
+</article>
+</div>
+
+
+<div class="box" id="medio">
+    <article class="article">
+        <h1>Modo Oscuro  </h1>
+        <p>Vamos a cambiar el color de fondo de esta página.</p>
+        <h3>
+            Conceptos Claves
+          </h3>
+          <p>Usaremos Css para añadir un modo "Dark" a nuestro body Html y JS para acceder a las etiquetas.</p>           
+    <p>Original "Light".container>.box</p>
+    <p>Modificado "Dark".container>.box.Dark</p>
+
+    <button id="show" onclick="cambiarModo()"> Dark Mode </button>
+    <button id="hide" onclick="volverModo()"> Light Mode </button>
+
+</article>
+</div>
+
+
+<div class="box" >
+    <article class="article">
+        <h1>Foo Bar  </h1>
+        <p>Del número pedido por pantalla veremos cuales son divisibles por 5 y 3.
+            Si es divisible por ambos obtendremos Foobar si es solo por 3 Foo y por 5 Bar.
+        Si no es divisible por ninguno se obtendra el numero pedido.</p>
+        <h3>
+            Conceptos Claves
+          </h3>
+          <li>Array</li>
+          <li>Condiciones</li>
+          <li>Ciclos</li>
+    
+          <label for="fname">Numero:</label><br>
+          <input type="number" id="lafoo" name="lafoo"  required min="1"><br>
+         
+          <button onclick="lafoo()"> Click this button</button>
+          <p id="demo11"></p>
+          
+
+</article>
+</div>
+
+<div class="box" >
+    <article class="article">
+        <h1>Mascota  </h1>
+        <p>obtener el promedio de la edad de las mascotas del siguiente array</p>
+        <p>const mascota =[
+            {nombre: "pelusa",edad:4,tipo:"perro"},
+            {nombre: "limon",edad:3,tipo:"perro"},
+            { nombre: "nina",edad:7,tipo:"gato"},
+            { nombre: "mumusu",edad:6,tipo:"gato",}
+        ]</p>
+        <h3>
+            Conceptos Claves
+          </h3>
+          <li>Array</li>
+          <li>Metodo Filter</li>
+          <li>Ciclos</li>
+          <li>Metodo MAP</li>
+
+    <p id="demo12"></p>
+    <button onclick="mascota()"> Click this button</button>
+    
+
+</article>
+</div>
+
+
+<div class="box" >
+    <article class="article">
+        <h1>Mascota Ordenada </h1>
+        <p>Reordenar el array mascota a nombre y tipo</p>
+        <p>const mascota =[
+            {nombre: "pelusa",edad:4,tipo:"perro"},
+            {nombre: "limon",edad:3,tipo:"perro"},
+            { nombre: "nina",edad:7,tipo:"gato"},
+            { nombre: "mumusu",edad:6,tipo:"gato",}
+        ]</p>
+        <h3>
+            Conceptos Claves
+          </h3>
+          <li>Metodo Reduce</li>
+          
+
+    <p id="demo13"></p>
+    <button onclick="ordenarMascota()"> Click this button</button>
+    
+
+</article>
+</div>
+
+<div class="box" id="dificil">
+    <article class="article">
+        <h1>Validar Matricula </h1>
+        <p>Haga una función que tome el parámetro que se está pasando y determine si la cadena es un nombre 
+            de usuario válido de acuerdo con las siguientes reglas:
+        </p>
+        <p> El nombre de usuario tiene entre 4 y 25 caracteres.
+        </p>
+        <p>Debe comenzar con una letra.
+        </p>
+        <p>Solo puede contener letras, números y el carácter de subrayado.
+        </p>
+        <p>No puede terminar con un carácter de subrayado.
+        </p>
+        <h3>
+            Conceptos Claves
+          </h3>
+         <ul>
+            <li>Expresiones Regulares.</li>           
+            <li>Arrays</li>
+            <li>Condiciones</li>
+           
+         </ul> 
+    <label for="fname">Matricula:</label><br>
+    <input type="text" id="validator" name="validator"  required ><br>
+ 
+    <button  onclick="CodelandUsernameValidation()"> Click this button </button>
+    <p id="demo14"></p>
+   
+</article>
+</div>
+
+<div class="box" >
+    <article class="article">
+        <h1>Palabra mas larga </h1>
+        <p>Devuelva la palabra más larga de la cadena. 
+            Si hay dos o más palabras que tienen la misma longitud, 
+            devuelva la primera palabra de la cadena con esa longitud
+        </p>
+        <p> Ejemplo:
+        </p>
+       
+        <p> Entrada: "diversión y !! tiempo"
+            Salida: diversion
+        </p>
+       
+        <h3>
+            Conceptos Claves
+          </h3>
+          <ul>
+            <li>Expresiones Regulares.</li>           
+            <li>Metodo Reduce</li>
+          </ul>
+          
+
+         <label for="fname">Cadena:</label><br>
+        <input type="text" id="cadena" name="cadena"  required ><br>
+       
+    <button  onclick="longestword()"> Click this button </button>
+    <p id="demog"></p>
+   
+</article>
+</div>
+
+<div class="box">
+<!-- contact section start -->
+<section class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title">Contact me</h2>
+        <div class="contact-content">
+            <div class="column left">
+                
+                <div class="box1">
+                      <div class="github"> <a href="https://github.com/jehu-alanis" target="_blank"><i class="fab fa-github-square"></i> </a> </div>  
+                       <div class="linkedin"> <a href="https://www.linkedin.com/in/jehu-alanis-ozuna-259b1513b/" target="_blank"> <i class="fab fa-linkedin"></i></a></div>                           
+                       <div class="facebook" ><a href="https://www.facebook.com/jehu.alanisuchiha/" target="_blank"><i class="fab fa-facebook-square"></i></a></div> 
+                    </div>
+                
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <div class="info">
+                            <div class="head">Nombre</div>
+                            <div class="sub-title">Jehu Alanis  Ozuna</div>
+                            <div class="sub-title">Ing. En Sistemas Computacionales</div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">Email</div>
+                            <div class="sub-title">alanis199426@hotmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+</div>
+
+
+</div>
+</body>
+
+<!-- footer section start -->
+<footer>
+    <span>Created By Jehu Alanis Ozuna | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+</footer>
+
+<script src="reverse.js"></script>
+<script src="script.js"></script>
+    
+</html>
