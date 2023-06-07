@@ -89,11 +89,11 @@ const FraseBocales = () => {
 const TotalBocales = () => {
 
   let frase = document.getElementById("frasevocadife").value;
-  let A = [...frase].filter(c => c === 'a');
-  let E = [...frase].filter(c => c === 'e');
-  let I = [...frase].filter(c => c === 'i');
-  let O = [...frase].filter(c => c === 'o');
-  let U = [...frase].filter(c => c === 'u');
+  let A = [...frase].filter(c => c.match(/a/gi));;
+  let E = [...frase].filter(c => c.match(/e/gi));;
+  let I = [...frase].filter(c => c.match(/i/gi));;
+  let O = [...frase].filter(c => c.match(/o/gi));;
+  let U = [...frase].filter(c => c.match(/u/gi));;
   //var bocales = [...new Set(total)]
 
   return document.getElementById("demo6").innerHTML = `${frase} tiene estas cantidad de bocales :
